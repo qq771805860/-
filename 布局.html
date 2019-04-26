@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<title></title>
+	</head>
+
+	<body>
+		<div class="container">
+			wo shi container
+		</div>
+		<div class="container-fluid">
+			wo shi container-fluid
+		</div>
+		<p>Container容器是窗口布局的最基本元素，推荐所有样式都定义在.container或.container-fluid容器之中-- 这是启用整个栅格系统必不可少的前置条件，
+			它们分别对应选择一个响应式的、固定宽度的容器，或者选择一个流式自适应浏览器或容器最大合法宽度的窗口（意味着任何时候它的宽度总是100%）</p>
+		<p>使用 .container-fluid 类，可以使div宽度扩展到整个宽度（如果没有被其它CSS容器包含，则应是浏览器运行时的宽度，否则应是父容器中允许的最大宽度，一般视为100%宽度）</p>
+		<pre>
+@media (min-width: 1200px)
+.container {
+    max-width: 1140px;
+}
+@media (min-width: 992px)
+.container {
+    max-width: 960px;
+}
+@media (min-width: 768px)
+.container {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container {
+    max-width: 540px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+    <!--padding,border都包含在定义的宽高里面-->
+}
+		</pre>
+		<div class="container">
+			<p>布局实施建议</p>
+			Flexbox 选项
+			Bootstrap 4 基于flexbox流式布局,大多数组件都支持flex流式布局定义，
+			 但不是所有元素的 display 都是默认就启用 display: flex 属性的(如果那样会增加很多不必要的DIV层叠，并会影响到浏览器渲染)。
+			如果您需要添加display: flex到DIV元素中，请使用.
+			d-flex、或其中一个响应变体（如.d-sm-flex）就有启用了
+		</div>
+
+	</body>
+
+</html>
